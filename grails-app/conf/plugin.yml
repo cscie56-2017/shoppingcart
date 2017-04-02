@@ -1,0 +1,8 @@
+grails:
+    plugin:
+        springsecurity:
+              userLookup:
+                  userDomainClassName: 'cscie56.demo.User'
+                  authorityJoinClassName: 'cscie56.demo.UserRole'
+              authority:
+                  className: 'cscie56.demo.Role'
