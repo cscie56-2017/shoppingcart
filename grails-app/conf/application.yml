@@ -79,7 +79,7 @@ grails:
 endpoints:
     jmx:
         unique-names: true
---
+---
 grails:
     plugin:
         springsecurity:
