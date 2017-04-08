@@ -24,6 +24,7 @@ class ShoppingCartSpec extends Specification {
             lineItem.item = item
             ShoppingCart cart = new ShoppingCart(lineItems: [lineItem], grandTotal: 1000, owner: new User())
         then:
+            cart.grandTotal == lineItem.extension
             cart.validate()
     }
 }

@@ -14,5 +14,6 @@ class ShoppingCart {
         grandTotal validator: { value, obj, errors ->
             value == obj?.lineItems*.extension?.sum()
         }
+        datePurchased nullable: true
     }
 }

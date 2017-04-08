@@ -44,4 +44,10 @@ class ShoppingCartService {
 
         cart.save(flush:true)
     }
+
+    ShoppingCart createCart(){
+        ShoppingCart cart =  new ShoppingCart(grandTotal: 0)
+        cart.save(flush:true)
+        cart
+    }
 }
