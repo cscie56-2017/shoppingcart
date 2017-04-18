@@ -13,8 +13,8 @@ class LineItem {
     }
 
     Object getItem () {
-        if (itemClass  && !item) {
-            return itemClass.get(item.id)
+        if (itemClass  && item) {
+            return itemClass.get(item?.id)
         } else {
             return item
         }
