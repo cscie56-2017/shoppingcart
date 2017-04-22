@@ -4,6 +4,7 @@ class ShoppingCart {
 
     Integer grandTotal = 0
     User owner
+    String creditCard
     Date dateCreated
     Date lastUpdated
     Date datePurchased
@@ -14,6 +15,7 @@ class ShoppingCart {
         grandTotal validator: { value, obj, errors ->
             value == obj?.lineItems*.extension?.sum()
         }
+        creditCard nullable: true, creditCard: true
         datePurchased nullable: true
     }
 }
